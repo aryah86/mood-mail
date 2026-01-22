@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Write a Mail</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <h1>Write a mail</h1>
+  
+  {% if locked %}
+    <p class="locked-message">🔒 Write a message to unlock more envelopes</p>
+  {% endif %}
+  
+  <p class="write-tagline">Choose a mood and let it find its way.</p>
+
+  <div class="write-form-container">
+    <form method="POST" action="/submit">
+
+      <label>Choose a mood</label>
+      <select name="mood" required>
+        <option value="">-- choose one --</option>
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="angry">Frustrated</option>
+        <option value="bored">Bored</option>
+      </select>
+
+      <label>Your note</label>
+      <textarea name="message" rows="6"
+        placeholder="Write something kind, funny, or honest..."
+        required></textarea>
+
+      <button type="submit">Let it find its way ✉️</button>
+
+    </form>
+  </div>
+
+  <div style="margin-top: 30px;">
+    <a href="/">← back</a>
+  </div>
+
+</body>
+</html>

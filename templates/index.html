@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mood Mail</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<img src="/static/images/title.png" alt="Mood Mail" class="title-img">
+<p class="subtitle">choose according to how you feel</p>
+
+<form action="/emotion" method="POST" class="moods">
+
+  <button name="emotion" value="happy">
+    <img src="/static/images/happy.png" alt="happy">
+    <span>Happy</span>
+  </button>
+
+  <button name="emotion" value="sad">
+    <img src="/static/images/sad.png" alt="sad">
+    <span>Sad</span>
+  </button>
+
+  <button name="emotion" value="angry">
+    <img src="/static/images/angry.png" alt="frustrated">
+    <span>Frustrated</span>
+  </button>
+
+  <button name="emotion" value="bored">
+    <img src="/static/images/bored.png" alt="bored">
+    <span>Bored</span>
+  </button>
+
+</form>
+
+<div class="write-section">
+  <a href="/write" class="write-button">Write a mail</a>
+</div>
+
+</body>
+</html>

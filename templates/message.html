@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Message - Mood Mail</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="letter">
+  <div class="letter-text">
+    {{ message }}
+  </div>
+  
+  <div class="actions">
+    <form method="POST" action="/emotion" style="display:inline;">
+      <input type="hidden" name="emotion" value="{{ emotion }}">
+      <button type="submit" class="link-button">← Back to envelopes</button>
+    </form>
+    <a href="/">Choose another mood</a>
+  </div>
+</div>
+
+</body>
+</html>

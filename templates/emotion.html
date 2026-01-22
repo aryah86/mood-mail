@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mood Mail</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="envelope-page">
+
+<div class="envelope-header">
+  <h2 class="envelope-title">Your messages</h2>
+  <p class="envelope-hint">Tap an envelope to reveal a message</p>
+</div>
+
+<div class="envelopes">
+  {% for msg in messages %}
+    <form method="POST" action="/open/{{ loop.index0 }}">
+      <button type="submit" class="envelope-button">
+        <img src="{{ url_for('static', filename='images/envelope.png') }}" 
+             class="envelope-img" 
+             alt="envelope">
+      </button>
+    </form>
+  {% endfor %}
+</div>
+
+<div class="sticky-nav">
+  <a href="/">← Choose another mood</a>
+  <span class="nav-divider">|</span>
+  <a href="/write">Write a mail</a>
+</div>
+
+</body>
+</html>
