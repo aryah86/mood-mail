@@ -1,0 +1,73 @@
+{
+  "happy": [
+    {
+      "text": "The smile on your face looks good on you. Keep it."
+    },
+    {
+      "text": "You're glowing today. Did you notice?"
+    },
+    {
+      "text": "Whatever you're doing, it's working. Stay golden."
+    },
+    {
+      "text": "Happiness suits you. Wear it often."
+    }
+  ],
+  "sad": [
+    {
+      "text": "It's gonna be okay. Eat something sweet — it might lift your mood a little."
+    },
+    {
+      "text": "Go for a walk and listen to Ophelia. It'll help, I promise."
+    },
+    {
+      "text": "Wrap yourself in a blanket. Make some tea. You deserve softness right now."
+    },
+    {
+      "text": "This feeling is temporary. You've survived hard days before."
+    },
+    {
+      "text": "Text someone you love. Even just a hi. Connection helps."
+    },
+    {
+      "text": "Cry if you need to. Then drink some water. Small steps."
+    }
+  ],
+  "angry": [
+    {
+      "text": "This will pass. Take a break and cool down."
+    },
+    {
+      "text": "Step outside for five minutes. Fresh air does wonders."
+    },
+    {
+      "text": "Don't worry about it too much. Some things aren't worth your energy."
+    },
+    {
+      "text": "Splash cold water on your face. Reset."
+    },
+    {
+      "text": "It's okay to be frustrated. But don't let it stay too long."
+    }
+  ],
+  "bored": [
+    {
+      "text": "Maybe watch Good Will Hunting. But carry tissues."
+    },
+    {
+      "text": "Make yourself a coffee and just sit with it for a while."
+    },
+    {
+      "text": "Call someone you haven't talked to in a while. Surprise them."
+    },
+    {
+      "text": "Reorganize your desk or closet. Oddly satisfying."
+    },
+    {
+      "text": "Learn one random fact today. Be a tiny bit smarter by tonight."
+    },
+    {
+      "text": "Bake something. Even if it's just toast with too much butter."
+    }
+  ]
+}
